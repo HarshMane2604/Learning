@@ -30,6 +30,14 @@
 //   })
 // });
 
+// PROMISES
+let promise = new Promise((resolve, reject) => {
+  console.log("I'm Promise");
+  // resolve("Suceesfully executed")
+  reject("Some error occurred")
+  
+}) 
+
 // // // Asynchronous Programming in JavaScript
 // // Asynchronous JavaScript refers to the execution 
 // // of code in a non-blocking manner, allowing other
@@ -37,3 +45,5 @@
 // // complete. This is particularly useful for tasks that
 // // take time, such as network requests, file reading, or
 // // timers.
+
+
