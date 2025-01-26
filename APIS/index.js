@@ -9,7 +9,23 @@ const getFacts = async () => {
     let data = await response.json();
     factPara.innerText = data[0].text;
 }
+// Syntax of Fetch API
+// fetch(url, options).then(response => response.json()).then(data => console.log(data)).catch(error => console.error('Error:', error));
 
+// Example usage:
+// fetch(url)
+//     .then(response => {
+//         if (!response.ok) {
+//             throw new Error('Network response was not ok ' + response.statusText);
+//         }
+//         return response.json();
+//     })
+//     .then(data => {
+//         console.log(data);
+//     })
+//     .catch(error => {
+//         console.error('There has been a problem with your fetch operation:', error);
+//     });
 // const getFacts = () => {
 //   fetch(url)
 //     .then((response) => {
